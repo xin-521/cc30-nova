@@ -1,0 +1,30 @@
+[package]
+name = "cc30-nova"
+version = "0.1.0"
+description = "A safe Rust + Vue control surface for CLEVO Control Center 3.0 hardware."
+authors = ["CC30 Nova contributors"]
+edition = "2021"
+
+[lib]
+name = "cc30_nova_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+chrono = "0.4"
+libloading = "0.8"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+tauri = { version = "2", features = [] }
+thiserror = "2"
+winreg = "0.52"
+windows-sys = { version = "0.59", features = [
+  "Win32_Foundation",
+  "Win32_Security",
+  "Win32_System_EventLog",
+  "Win32_System_Power",
+  "Win32_System_SystemInformation",
+] }
+wmi = "0.17"

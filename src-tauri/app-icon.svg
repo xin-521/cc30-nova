@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#151a15"/>
+      <stop offset="1" stop-color="#080a08"/>
+    </linearGradient>
+    <linearGradient id="heat" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#c86d38"/>
+      <stop offset="1" stop-color="#ffd0a7"/>
+    </linearGradient>
+    <linearGradient id="cool" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#328d84"/>
+      <stop offset="1" stop-color="#8ce9dc"/>
+    </linearGradient>
+  </defs>
+  <rect width="1024" height="1024" rx="196" fill="url(#bg)"/>
+  <rect x="74" y="74" width="876" height="876" rx="145" fill="none" stroke="#dce4d4" stroke-opacity=".12" stroke-width="5"/>
+  <path d="M261 761V279h104l294 338V279h104v482H659L365 423v338z" fill="url(#heat)"/>
+  <path d="M327 831h370v54H327z" fill="url(#cool)"/>
+  <path d="M865 190v154M788 267h154" stroke="#dce4d4" stroke-opacity=".35" stroke-width="5"/>
+  <circle cx="865" cy="267" r="8" fill="#b7df71"/>
+</svg>

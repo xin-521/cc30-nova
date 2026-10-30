@@ -1,0 +1,47 @@
+# Dependencies
+/node_modules/
+
+# Frontend and Tauri build output
+/dist/
+/src-tauri/target/
+/src-tauri/gen/schemas/
+
+# Native vendor binaries are intentionally not redistributed
+/src-tauri/resources/native/*
+!/src-tauri/resources/native/README.md
+
+# Reverse-engineering and hardware test artifacts
+/test-artifacts/
+/*.dmp
+/*.etl
+/*.pdb
+
+# Reference screenshots that are not product assets
+/fd83b6dfb3e2421789acc6eebb9f5412-3675390166.png
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+*.local
+*.pfx
+*.p12
+*.key
+*.pem
+
+# Editors and operating systems
+/.idea/
+/.vscode/*
+!/.vscode/extensions.json
+/.fleet/
+/.vs/
+/.DS_Store
+/Thumbs.db
+Desktop.ini
